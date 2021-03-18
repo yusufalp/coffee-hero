@@ -1,0 +1,23 @@
+<div class="group">
+  <div class="sign-on-form">
+    <form>
+      <div class="input-label">
+        <label for="username">Username</label>
+        <input #username type="text" name="username" id="username" autofocus>
+      </div>
+      <div class="input-label">
+        <label for="password">Password
+          <span #passwordToggleText class="input-feature" (click)="onClickTogglePassword()">
+            <img #passwordToggleIcon src="/assets/icon--eye-closed.svg" alt="open-eye">
+            Hide
+          </span>
+        </label>
+        <input #password type="text" name="password" id="password" />
+      </div>
+      <input #remember type="checkbox" name="remember" id="remember">
+      <label for="remember">Remember</label>
+      <button type="submit">Sign On</button>
+    </form>
+  </div>
+  <img class="coffee-lounge" src="/assets/hero-image.png" alt="coffee lounge">
+</div>
