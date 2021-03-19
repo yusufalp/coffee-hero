@@ -1,0 +1,30 @@
+.registration-form {
+  width: 40%;
+  margin: auto;
+  z-index: 100;
+  background-color: white;
+}
+
+label,
+input {
+  width: 99%;
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal-content {
+  width: 100%;
+  margin: 22vw auto;
+}
+
+.modal-form {
+  width: 100%;
+}
