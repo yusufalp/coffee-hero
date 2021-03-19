@@ -1,19 +1,11 @@
 <div class="group">
   <div class="sign-on-form">
     <form>
-      <div class="input-label">
-        <label for="username">Username</label>
-        <input #username type="text" name="username" id="username" autofocus>
-      </div>
-      <div class="input-label">
-        <label for="password">Password
-          <span #passwordToggleText class="input-feature" (click)="onClickTogglePassword()">
-            <img #passwordToggleIcon src="/assets/icon--eye-closed.svg" alt="open-eye">
-            Hide
-          </span>
-        </label>
-        <input #password type="text" name="password" id="password" />
-      </div>
+      <app-form-field labelText="Username" labelFor="username" inputType="text" inputName="username" inputId="username">
+      </app-form-field>
+      <app-form-field labelText="Password" labelFor="password" inputType="text" inputName="password" inputId="password"
+        imgSrc="./assets/icon--eye-closed.svg" imgAlt="closed eye icon" featureText=" Hide">
+      </app-form-field>
       <input #remember type="checkbox" name="remember" id="remember">
       <label for="remember">Remember</label>
       <button type="submit">Sign On</button>
