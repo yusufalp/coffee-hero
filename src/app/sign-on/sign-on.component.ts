@@ -6,21 +6,26 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./sign-on.component.css'],
 })
 export class SignOnComponent {
-  @ViewChild('password') password: ElementRef;
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  @ViewChild('input') password: ElementRef;
   @ViewChild('passwordToggleText') passwordToggleText: ElementRef;
   @ViewChild('passwordToggleIcon') passwordToggleIcon: ElementRef;
 
-  onClickTogglePassword() {
+  onClickTogglePassword = (args: any): void => {
     let passwordType = this.password.nativeElement.type;
-    // let passwordToggleText = this.passwordToggleText.nativeElement.textContent;
-    // let passwordToggleIcon = this.passwordToggleIcon.nativeElement.imgSrc;
 
     if (passwordType === 'password') {
       this.password.nativeElement.type = 'text';
-      this.passwordToggleText.nativeElement.textContent = 'Hide';
+      this.passwordToggleText.nativeElement.textContent = ' Hide';
+      this.passwordToggleIcon.nativeElement.src =
+        './assets/icon--eye-closed.svg';
     } else {
       this.password.nativeElement.type = 'password';
-      this.passwordToggleText.nativeElement.textContent = 'Show';
+      this.passwordToggleText.nativeElement.textContent = ' Show';
+      this.passwordToggleIcon.nativeElement.src = './assets/icon--eye-open.svg';
     }
-  }
+  };
 }
