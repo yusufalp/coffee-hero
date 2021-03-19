@@ -1,0 +1,11 @@
+<div class="input-label">
+  <label for={{labelFor}}>{{labelText}}
+    <div class="input-feature">
+      <img #inputFeatureIcon src={{imgSrc}} alt={{imgAlt}}>
+      <span #inputFeatureText (click)="onClickTogglePassword()">
+        {{featureText}}
+      </span>
+    </div>
+  </label>
+  <input #input type={{inputType}} name={{inputName}} id={{inputId}} autofocus>
+</div>
