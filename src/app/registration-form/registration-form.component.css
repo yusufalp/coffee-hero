@@ -1,3 +1,9 @@
+form {
+  width: 80%;
+  max-width: 292px;
+  margin: 40vh auto;
+}
+
 .registration-form {
   width: 40%;
   margin: auto;
@@ -25,6 +31,8 @@ input {
   margin: 22vw auto;
 }
 
-.modal-form {
-  width: 100%;
+@media all and (min-width: 496px) {
+  form {
+    width: 50%;
+  }
 }
