@@ -2,41 +2,6 @@
   display: none;
 }
 
-form {
-  width: 80vw;
-  position: absolute;
-  top: 40vh;
-  left: 10vw;
-}
-
-input[type="text"],
-input[type="password"] {
-  display: block;
-  border: none;
-  font-size: 1.2rem;
-  width: 16vw;
-  min-width: 192px;
-  max-width: 272px;
-  outline: none;
-}
-
-input[type="checkbox"] {
-  margin-left: 0;
-}
-
-.input-label {
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 7px 2px #d3d3d3;
-  padding: 0 9px 3px;
-  margin-bottom: 12px;
-  min-width: 202px;
-}
-
-.input-feature {
-  float: right;
-}
-
 button {
   border: none;
   border-radius: 5px;
@@ -50,20 +15,7 @@ button {
   min-width: 80px;
 }
 
-@media all and (min-width: 496px) {
-  form {
-    width: 50%;
-    left: 20vw;
-  }
-}
-
 @media all and (min-width: 992px) {
-  form {
-    width: 20vw;
-    left: 15vw;
-    max-width: 292px;
-  }
-
   button {
     width: 8vw;
   }

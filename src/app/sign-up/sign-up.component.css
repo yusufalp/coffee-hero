@@ -6,7 +6,7 @@
 }
 
 ul {
-  width: 226px;
+  width: 232px;
   margin: auto;
   padding-left: 0;
 }
@@ -16,15 +16,11 @@ li {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-  color: #235789;
-}
-
 p {
+  color: #235789;
   display: inline;
   margin: 0;
-  padding: 0 12px;
+  padding: 0 5px;
 }
 
 @media all and (min-width: 992px) {

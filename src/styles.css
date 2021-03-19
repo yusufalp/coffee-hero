@@ -4,6 +4,54 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   margin: 0;
+}
+
+form {
+  width: 80%;
+  max-width: 292px;
+  margin: 40vh auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  border: none;
+  font-size: 1.2rem;
+  width: 16vw;
+  min-width: 192px;
+  max-width: 272px;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin-left: 0;
+}
+
+.input-label {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 2px #d3d3d3;
+  padding: 0 9px 3px;
+  margin-bottom: 12px;
+  min-width: 202px;
+}
+
+.input-feature {
+  float: right;
+}
+
+@media all and (min-width: 496px) {
+  form {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 992px) {
 }
