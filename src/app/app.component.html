@@ -1,3 +1,6 @@
   <img class="company-logo" src="/assets/logo--Gaggle.svg" alt="gaggle logo">
   <app-sign-on></app-sign-on>
-  <app-sign-up></app-sign-up>
+  <app-sign-up (onToggleClick)="onToggleClick()"></app-sign-up>
+  <div class="registration-modal hidden">
+    <app-registration-form (onToggleClick)="onToggleClick()"></app-registration-form>
+  </div>
