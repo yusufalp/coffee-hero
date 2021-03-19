@@ -1,7 +1,10 @@
+label {
+  display: block;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  display: block;
   border: none;
   font-size: 1.2rem;
   width: 16vw;
@@ -25,4 +28,9 @@ input[type="checkbox"] {
 
 .input-feature {
   float: right;
+}
+
+.error-message {
+  color: #ba274a;
+  font-size: 12px;
 }
