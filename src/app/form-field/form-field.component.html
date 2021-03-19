@@ -7,5 +7,8 @@
       </span>
     </div>
   </label>
-  <input #input type={{inputType}} name={{inputId}} id={{inputId}} autofocus>
+  <span *ngIf="error"><img src={{alertIcon}} alt="alert"></span>
+  <input #input type={{inputType}} name={{inputId}} id={{inputId}} (keyup)="onChangeReceiveValue($event)" autofocus
+    required>
+  <div class="error-message" *ngIf="error">{{message}}</div>
 </div>
