@@ -1,5 +1,5 @@
 <div class="input-label">
-  <label for={{labelFor}}>{{labelText}}
+  <label for={{inputId}}>{{labelText}}
     <div class="input-feature">
       <img #inputFeatureIcon src={{imgSrc}} alt={{imgAlt}}>
       <span #inputFeatureText (click)="onClickTogglePassword()">
@@ -7,5 +7,5 @@
       </span>
     </div>
   </label>
-  <input #input type={{inputType}} name={{inputName}} id={{inputId}} autofocus>
+  <input #input type={{inputType}} name={{inputId}} id={{inputId}} autofocus>
 </div>

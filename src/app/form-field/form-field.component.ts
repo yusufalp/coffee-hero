@@ -11,10 +11,8 @@ export class FormFieldComponent implements OnInit {
   ngOnInit(): void {}
 
   @Input() labelText: string;
-  @Input() labelFor: string;
   @Input() inputType: string;
   @Input() inputId: string;
-  @Input() inputName: string;
   @Input() imgSrc: string;
   @Input() imgAlt: string;
   @Input() featureText: string;
