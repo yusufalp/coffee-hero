@@ -1,6 +1,7 @@
 <div class="modal">
   <div class="registration-form">
-    <form class="modal-form">
+    <h3>New Account</h3>
+    <form>
       <app-form-field labelText="Username" inputType="text" inputId="username">
       </app-form-field>
       <app-form-field labelText="Password" inputType="text" inputId="password" imgSrc="./assets/icon--eye-closed.svg"
@@ -8,10 +9,16 @@
       </app-form-field>
       <app-form-field labelText="Email" inputType="email" inputId="email">
       </app-form-field>
-      <div>
-        <p (click)="onClick()">Cancel</p>
-        <button type="submit">Register Account</button>
-      </div>
     </form>
+    <div class="registration-links">
+      <ul>
+        <li>
+          <button class="cancel" (click)="onClick()">Cancel</button>
+        </li>
+        <li class="registration-submit-link">
+          <button type="submit">Register Account</button>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
