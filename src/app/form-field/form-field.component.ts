@@ -35,4 +35,24 @@ export class FormFieldComponent implements OnInit {
       this.passwordToggleIcon.nativeElement.src = './assets/icon--eye-open.svg';
     }
   }
+
+  error: boolean = false;
+  message: string = '';
+  alertIcon: string = './assets/icon--alert.svg';
+
+  onChangeReceiveValue(event) {
+    this.error = true;
+    let value = event.target.value;
+
+    if (event.target.id === 'password') {
+      if (value.length < 10) {
+        this.message = 'Password must be at least 10 characters!';
+        if (value.length === 0) {
+          this.message = 'No value provided';
+        }
+      } else {
+        this.error = false;
+      }
+    }
+  }
 }
