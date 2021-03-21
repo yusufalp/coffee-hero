@@ -1,31 +1,49 @@
 <div class="modal">
   <div class="registration-form">
-    <form>
-      <div class="sidepanel-item">
-        <div class="registration-sidepanel"><img class="sidepanel-icon"
-            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/hatching-chick_1f423.png"
-            alt="hatching chick emoji"></div>
+    <form action="" method="">
+      <div class="flex-form">
+        <div class="sidepanel-item">
+          <div class="registration-sidepanel"><img class="sidepanel-icon"
+              src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/hatching-chick_1f423.png"
+              alt="hatching chick emoji">
+          </div>
+        </div>
+        <div class="form-item">
+          <h3>New Account</h3>
+          <div class="input-label">
+            <label for="username-register">Username</label>
+            <input #username type="text" name="username" id="username-register" autofocus required>
+          </div>
+          <div class="input-label">
+            <label for="password-register">Password
+              <div class="input-feature">
+                <img #passwordFeatureIcon src="./assets/icon--eye-open.svg" alt="open eye icon">
+                <span #passwordFeatureText (click)="onClickTogglePassword()">
+                  Show
+                </span>
+              </div>
+            </label>
+            <span *ngIf="error"><img src="./assets/icon--alert.svg" alt="alert"></span>
+            <input #password type="password" name="password" id="password-register" required
+              (keyup)="onChangeReceiveValue($event)">
+            <div *ngIf="error" class="error-message">{{errorMessage}}</div>
+          </div>
+          <div class="input-label">
+            <label for="email">Email</label>
+            <input #username type="email" name="email" id="email" required>
+          </div>
+        </div>
       </div>
-      <div class="form-item">
-        <h3>New Account</h3>
-        <app-form-field labelText="Username" inputType="text" inputId="username">
-        </app-form-field>
-        <app-form-field labelText="Password" inputType="password" inputId="password"
-          imgSrc="./assets/icon--eye-open.svg" imgAlt="open eye icon" featureText=" Show">
-        </app-form-field>
-        <app-form-field labelText="Email" inputType="email" inputId="email">
-        </app-form-field>
+      <div class="registration-links">
+        <ul>
+          <li>
+            <button class="cancel" type="button" (click)="onClick()">Cancel</button>
+          </li>
+          <li class="registration-submit-link">
+            <button type="submit">Register Account</button>
+          </li>
+        </ul>
       </div>
     </form>
-    <div class="registration-links">
-      <ul>
-        <li>
-          <button class="cancel" (click)="onClick()">Cancel</button>
-        </li>
-        <li class="registration-submit-link">
-          <button type="submit">Register Account</button>
-        </li>
-      </ul>
-    </div>
   </div>
 </div>
