@@ -1,5 +1,7 @@
-.coffee-lounge {
-  display: none;
+.company-logo {
+  position: absolute;
+  left: 12px;
+  top: 12px;
 }
 
 form {
@@ -8,17 +10,105 @@ form {
   margin: 40vh auto;
 }
 
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  font-size: 1.2rem;
+  width: 13vw;
+  min-width: 192px;
+  max-width: 272px;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin-left: 0;
+}
+
+.remember {
+  display: inline;
+}
+
+.input-label {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 2px #d3d3d3;
+  padding: 0 9px 3px;
+  margin-bottom: 12px;
+  min-width: 192px;
+}
+
+.input-feature {
+  float: right;
+}
+
 button {
   border: none;
   border-radius: 5px;
   background-color: #235789;
-  color: white;
+  color: #ffffff;
   display: block;
   font-size: 1rem;
   margin: 12px auto;
   padding: 8px 0;
   width: 16vw;
   min-width: 80px;
+}
+
+button a {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #5995ed;
+}
+
+.error-message {
+  color: #ba274a;
+  font-size: 12px;
+}
+
+.coffee-lounge {
+  display: none;
+}
+
+.register {
+  width: 100%;
+  position: absolute;
+  bottom: 2vh;
+  left: 0;
+}
+
+ul {
+  width: 212px;
+  margin: auto;
+  padding-left: 0;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+p {
+  color: #235789;
+  display: inline;
+  margin: 0;
+  padding: 0 5px;
+}
+
+li p:hover {
+  cursor: pointer;
 }
 
 @media all and (min-width: 496px) {
@@ -43,5 +133,9 @@ button {
     object-fit: cover;
     width: 50vw;
     height: 100vh;
+  }
+
+  .register {
+    width: 50%;
   }
 }
