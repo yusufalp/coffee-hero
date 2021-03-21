@@ -1,23 +1,58 @@
 .modal {
+  background-color: rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .registration-form {
+  background-color: #ffffff;
+  width: 60%;
   min-width: 420px;
   max-width: 580px;
-  width: 60%;
   margin: 25vh auto;
   z-index: 100;
-  background-color: #ffffff;
 }
 
-form {
+.flex-form {
   display: flex;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  width: 16vw;
+  min-width: 192px;
+  max-width: 272px;
+}
+
+.input-label {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 2px #d3d3d3;
+  padding: 0 9px 3px;
+  margin-bottom: 12px;
+  min-width: 202px;
+  max-width: 360px;
+}
+
+.input-feature {
+  float: right;
+}
+
+.sidepanel-icon {
+  margin: 24px;
+  width: 48px;
 }
 
 .sidepanel-item {
@@ -29,18 +64,6 @@ form {
   flex: 3;
   background-color: #f8f8f8;
   padding: 6px 24px;
-}
-
-.sidepanel-icon {
-  width: 48px;
-  margin: 24px;
-}
-
-label,
-input {
-  width: 99%;
-  display: block;
-  max-width: 272px;
 }
 
 ul {
@@ -66,15 +89,29 @@ li {
 button {
   background: none;
   border: none;
-  padding: 0;
   font-size: 16px;
   color: #069;
   cursor: pointer;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #a50104;
 }
 
 .cancel {
   color: black;
   margin: 0;
+}
+
+.error-message {
+  color: #ba274a;
+  font-size: 12px;
 }
 
 @media all and (min-width: 992px) {
