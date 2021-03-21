@@ -1,15 +1,47 @@
+<img class="company-logo" src="/assets/logo--Gaggle.svg" alt="gaggle logo">
 <div class="group">
   <div class="sign-on-form">
     <form>
-      <app-form-field labelText="Username" inputType="text" inputId="username">
-      </app-form-field>
-      <app-form-field labelText="Password" inputType="password" inputId="password" imgSrc="./assets/icon--eye-open.svg"
-        imgAlt="open eye icon" featureText=" Show">
-      </app-form-field>
+      <div class="input-label">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required>
+      </div>
+      <div class="input-label">
+        <label for="password">Password
+          <div class="input-feature">
+            <img #passwordFeatureIcon src="./assets/icon--eye-open.svg" alt="open eye icon">
+            <span #passwordFeatureText (click)="onClickTogglePassword()">
+              Show
+            </span>
+          </div>
+        </label>
+        <span *ngIf="error"><img src="./assets/icon--alert.svg" alt="alert"></span>
+        <input #password type="password" name="password" id="password" required (keyup)="onChangeReceiveValue($event)">
+        <div *ngIf="error" class="error-message">{{errorMessage}}</div>
+      </div>
       <input #remember type="checkbox" name="remember" id="remember">
-      <label for="remember">Remember</label>
-      <button type="submit">Sign On</button>
+      <label class="remember" for="remember">Remember</label>
+      <button type="button"><a routerLink="/dashboard">Sign On</a></button>
     </form>
   </div>
-  <img class="coffee-lounge" src="/assets/hero-image.png" alt="coffee lounge">
+  <img class="coffee-lounge" src="./assets/hero-image.png" alt="coffee lounge">
+</div>
+
+<div class="register">
+  <ul>
+    <li>
+      <a (click)="onClick()">Register</a>
+    </li>
+    <li>
+      <p>|</p>
+    </li>
+    <li>
+      <a routerLink="/">Forgot Password?</a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="registration-modal hidden">
+  <app-registration-form (click)="onClick()"></app-registration-form>
 </div>
