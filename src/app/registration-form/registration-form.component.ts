@@ -16,6 +16,7 @@ export class RegistrationFormComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
   @Output('onToggleClick') onToggleClick: EventEmitter<
     any
   > = new EventEmitter();
@@ -48,7 +49,6 @@ export class RegistrationFormComponent implements OnInit {
 
   error: boolean = false;
   errorMessage: string = '';
-  alertIcon: string = './assets/icon--alert.svg';
 
   onChangeReceiveValue(event) {
     let value = event.target.value;
@@ -58,7 +58,7 @@ export class RegistrationFormComponent implements OnInit {
     let letterResult = checkUpperCase.test(value);
     let numberResult = checkNumber.test(value);
 
-    if (event.target.id === 'password') {
+    if (event.target.id === 'password-register') {
       this.error = true;
       if (value.length < 10) {
         this.errorMessage = 'Password must be at least 10 characters!';
