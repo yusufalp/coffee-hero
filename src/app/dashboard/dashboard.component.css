@@ -1,32 +1,23 @@
-.fa-th {
-  color: #c9c9c9;
-  position: absolute;
-  font-size: 36px;
-  top: 12px;
-  left: 12px;
-}
-
-.fa-angle-right,
-.fa-angle-down {
-  padding-left: 6px;
-}
-
-.company-logo {
-  position: absolute;
-  top: 11px;
-  left: 60px;
-}
-
 nav {
   background-color: #e9e9e9;
   width: 100vw;
-  height: 180px;
+  height: 236px;
   position: absolute;
   padding-top: 64px;
 }
 
+.features {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d3d3d3;
+  box-shadow: 0 1px 0 white;
+}
+
 .group {
   display: flex;
+}
+
+.nav-buttons {
+  margin-left: 24px;
 }
 
 .options {
@@ -51,11 +42,74 @@ nav {
   text-align: center;
 }
 
-.nav-buttons {
-  margin-left: 24px;
-}
-
 .selection {
   position: absolute;
   right: 12px;
+}
+table th {
+  text-align: left;
+}
+
+.table {
+  padding-top: 8px;
+}
+
+.select {
+  padding-left: 20px;
+  margin: 0 1vw;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+#select {
+  width: 4vw;
+}
+
+#date {
+  box-shadow: 1px 0 0 white;
+  border-right: 1px solid #d3d3d3;
+  width: 16vw;
+}
+#incident {
+  width: 120px;
+  box-shadow: 1px 0 0 white;
+  border-right: 1px solid #d3d3d3;
+  text-align: center;
+}
+#status {
+  width: calc(80vw - 120px);
+  padding-left: 6px;
+}
+
+.company-logo {
+  position: absolute;
+  top: 11px;
+  left: 60px;
+}
+.fa-th {
+  color: #c9c9c9;
+  position: absolute;
+  font-size: 36px;
+  top: 12px;
+  left: 12px;
+}
+
+.fa-angle-right,
+.fa-angle-down {
+  padding-left: 6px;
+}
+
+@media all and (min-width: 520px) {
+  .group {
+    flex-direction: row;
+  }
+
+  .group-buttons,
+  .group-selection {
+    display: flex;
+  }
+
+  nav {
+    height: 156px;
+  }
 }
