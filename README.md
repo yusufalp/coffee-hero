@@ -1,4 +1,4 @@
-# CoffeeHero
+# Coffee Hero
 
 A sign on and register page for your applications.
 
@@ -20,7 +20,7 @@ Install dependencies
 npm install
 ```
 
-start the app (should start on `http://localhost:4200/`)
+Start the app (should start on `http://localhost:4200/`)
 
 ```
 npm start
