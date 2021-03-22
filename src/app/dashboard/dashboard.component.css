@@ -1,0 +1,61 @@
+.fa-th {
+  color: #c9c9c9;
+  position: absolute;
+  font-size: 36px;
+  top: 12px;
+  left: 12px;
+}
+
+.fa-angle-right,
+.fa-angle-down {
+  padding-left: 6px;
+}
+
+.company-logo {
+  position: absolute;
+  top: 11px;
+  left: 60px;
+}
+
+nav {
+  background-color: #e9e9e9;
+  width: 100vw;
+  height: 180px;
+  position: absolute;
+  padding-top: 64px;
+}
+
+.group {
+  display: flex;
+}
+
+.options {
+  text-align: center;
+}
+
+.options div {
+  font-size: 10px;
+}
+
+.options button,
+.options input {
+  background-color: #fff;
+  width: 48px;
+  border: none;
+  box-shadow: 0 0 5px 3px #d3d3d3;
+  margin: 0 6px;
+}
+
+.options input {
+  width: 180px;
+  text-align: center;
+}
+
+.nav-buttons {
+  margin-left: 24px;
+}
+
+.selection {
+  position: absolute;
+  right: 12px;
+}
