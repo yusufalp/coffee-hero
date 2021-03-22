@@ -30,7 +30,7 @@
 <div class="register">
   <ul>
     <li>
-      <a (click)="onClick()">Register</a>
+      <a (click)="onToggleClick()">Register</a>
     </li>
     <li>
       <p>|</p>
@@ -43,5 +43,5 @@
 
 
 <div class="registration-modal hidden">
-  <app-registration-form (click)="onClick()"></app-registration-form>
+  <app-registration-form (onToggleClick)="onToggleClick()"></app-registration-form>
 </div>
