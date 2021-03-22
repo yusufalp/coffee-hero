@@ -29,10 +29,6 @@ input[type="checkbox"] {
   margin-left: 0;
 }
 
-.remember {
-  display: inline;
-}
-
 .input-label {
   background-color: #ffffff;
   border: none;
@@ -45,6 +41,10 @@ input[type="checkbox"] {
 
 .input-feature {
   float: right;
+}
+
+.remember {
+  display: inline;
 }
 
 button {
@@ -71,6 +71,7 @@ a {
 
 a:hover {
   color: #5995ed;
+  cursor: pointer;
 }
 
 .error-message {
@@ -118,10 +119,6 @@ li p:hover {
 }
 
 @media all and (min-width: 992px) {
-  button {
-    width: 8vw;
-  }
-
   .group {
     display: flex;
     flex-direction: row;
@@ -133,6 +130,10 @@ li p:hover {
     object-fit: cover;
     width: 50vw;
     height: 100vh;
+  }
+
+  button {
+    width: 8vw;
   }
 
   .register {
