@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-on',
@@ -6,7 +7,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./sign-on.component.css'],
 })
 export class SignOnComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -68,5 +69,9 @@ export class SignOnComponent implements OnInit {
         this.error = false;
       }
     }
+  }
+
+  onSubmit() {
+    this.router.navigate(['/dashboard']);
   }
 }
