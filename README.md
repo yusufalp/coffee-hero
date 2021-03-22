@@ -1,27 +1,40 @@
 # CoffeeHero
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+A sign on and register page for your applications.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4. We use `npm` to manage the dependencies
 
-## Code scaffolding
+### How to run this program locally
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clone the repo to your local machine:
 
-## Build
+```
+git clone https://github.com/yusufalp/coffee-hero.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Install dependencies
 
-## Running unit tests
+```
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+start the app (should start on `http://localhost:4200/`)
 
-## Running end-to-end tests
+```
+npm start
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+The app will automatically reload if you change any of the source files.
 
-## Further help
+## Technologies Used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- `Angular 11.2.5`
+- `Typescript 4.1.5`
+
+### Bug reports
+
+If you discover any bugs, feel free to create an issue on GitHub. Please add as much information as possible to help us in fixing the potential bug. We also encourage you to help even more by forking and sending us a pull request.
+
+https://github.com/yusufalp/coffee-hero/issues
