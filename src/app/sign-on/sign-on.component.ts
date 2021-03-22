@@ -11,7 +11,7 @@ export class SignOnComponent implements OnInit {
   ngOnInit(): void {}
 
   display = false;
-  onClick() {
+  onToggleClick() {
     this.display = !this.display;
 
     this.display
@@ -43,7 +43,6 @@ export class SignOnComponent implements OnInit {
 
   error: boolean = false;
   errorMessage: string = '';
-  alertIcon: string = './assets/icon--alert.svg';
 
   onChangeReceiveValue(event) {
     let value = event.target.value;
