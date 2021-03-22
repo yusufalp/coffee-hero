@@ -18,6 +18,7 @@
 
 .flex-form {
   display: flex;
+  height: 300px;
 }
 
 label {
@@ -63,7 +64,7 @@ input[type="password"] {
 .form-item {
   flex: 3;
   background-color: #f8f8f8;
-  padding: 6px 24px;
+  padding: 6px 57px;
 }
 
 ul {
@@ -100,13 +101,13 @@ a {
   color: #000000;
 }
 
-a:hover {
-  color: #a50104;
+.cancel {
+  color: #000000;
+  margin: 0;
 }
 
-.cancel {
-  color: black;
-  margin: 0;
+.cancel:hover {
+  color: #a50104;
 }
 
 .error-message {
@@ -116,6 +117,6 @@ a:hover {
 
 @media all and (min-width: 992px) {
   .registration-form {
-    width: 40%;
+    width: 50%;
   }
 }
